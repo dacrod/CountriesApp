@@ -17,4 +17,8 @@ export class SearchBoxComponent {
     this.onValue.emit(txtInput);
   }
 
+  onKeyPress( searchTerm: string ) {
+    
+  }
+
 }
