@@ -6,7 +6,8 @@
         <!-- SearchBox -->
         <shared-search-box 
             placeholder="Buscar por capital"
-            (onValue)="searchByCapital($event)"
+            (onDebounce)="searchByCapital($event)"
+            [initialValue]="initialValueCapital"
             >
         </shared-search-box>
     </div>
@@ -19,3 +20,5 @@
         <countries-table [countries]="countries"></countries-table>
     </div>
 </div>
+
+<!-- (onValue)="searchByCapital($event)" -->
